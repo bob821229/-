@@ -1,0 +1,120 @@
+<!-- saved from url=(0041)https://wrwsr.triwra.org.tw/Account/Login -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登入 農業水資源智慧決策支援平台</title>
+    <link rel="icon" href="https://wrwsr.triwra.org.tw/Img/WRWSR_LOGO_Only.svg">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="src/assets/login/bootstrap.min.css">
+    <link href="src/assets/login/style.css" rel="stylesheet">
+    <style>
+        #loginForm {
+            background-image: url('src/assets/login/background.jpg') !important;
+            background-size: cover;
+            background-position: top;
+        }
+
+        form[action="/Account/Login"] {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body id="loginForm" cz-shortcut-listen="true">
+    <div id="loading" style="display: none;">
+        <div class="d-flex justify-content-center spin">
+            <div class="spinner-border text-success" role="status"></div>
+        </div><span class="t_loading">Loading...</span>
+    </div>
+
+    <!-- =====  main  =====  -->
+    <section class="login relative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="login_outer">
+                        <div class="banner"><img src="src/assets/login/WRWSR_LOGO.svg" alt=""></div>
+
+                        <form action="https://wrwsr.triwra.org.tw/Account/Login" autocomplete="off" method="post"
+                            role="form"><input name="__RequestVerificationToken" type="hidden"
+                                value="hFt0dDKcFUCbrXTWFvVz9yr060Yw0i26uZeMr1m38MGyMTQ7Z1YL0d3S3vQgtGQAtw2czIYMYat6E-32P35qE2DU_kn5IbpNirDuQ2fQsO69bTpEf7aEd-NHIkdptbJr9UJE8ntb8GhbDE9tZ2O3Iw2">
+                            <div class="login_content py-4">
+                                <div class="title text-center mb-4">
+                                    <h4 data-bs-toggle="modal" data-bs-target="#tipError" class="fw_700">系統登入</h4>
+                                </div>
+
+
+                                <div class="col-md-12 position-relative mb-2">
+                                    <input autocomplete="off" class="form-control" data-val="true"
+                                        data-val-length="帳號 的長度至少必須為 3 個字元。" data-val-length-max="20"
+                                        data-val-length-min="3" data-val-required="請輸入帳號" id="UserName" name="UserName"
+                                        placeholder="請輸入您的帳號" required="" type="text" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="UserName"
+                                        data-valmsg-replace="true"></span>
+
+                                </div>
+
+                                <div class="col-md-12 position-relative">
+                                    <input autocomplete="off" class="form-control" data-val="true"
+                                        data-val-required="請輸入密碼" id="Password" name="Password" placeholder="請輸入您的密碼"
+                                        required="" type="password">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="Password"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+
+                                <div class="col-lg-12 d-flex justify-content-end my-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="flexCheckChecked" type="checkbox" value=""
+                                            checked="">
+                                        <label class="form-check-label" for="flexCheckChecked">記住我</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+
+                                    <button class="btn login_btn btn_lg" type="submit"> <span
+                                            class="fw_700">登入</span></button>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--帳號密碼輸入錯誤提示dialog-->
+        <!-- Modal-->
+
+    </section>
+
+
+
+    <!-- Libs JS -->
+    <!-- jquery -->
+    <script src="./登入 農業水資源智慧決策支援平台_files/jquery.min.js.下載"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"></script>
+    <script>
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('#loading').fadeOut(500);
+            }, 1000);
+        });
+    </script>
+
+
+</body>
+
+</html>

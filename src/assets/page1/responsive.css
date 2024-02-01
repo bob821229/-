@@ -1,0 +1,172 @@
+
+/*------------------------------------------
+  Responsive Grid Media Queries
+--------------------------------------------*/
+
+@media (min-width: 1920px) {
+}
+
+@media (max-width: 1450px) {
+
+
+    .filter_item span {
+        padding-top: 0.1rem;
+    }
+
+        .filter_item span:nth-child(1) {
+            padding-top: 0.3rem;
+        }
+}
+
+@media (max-width: 1350px) {
+    .container-fuild {
+        padding: 0 1.5rem
+    }
+}
+
+@media (max-width: 1200px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    h5 {
+        font-size: 1.125em;
+    }
+
+    h6 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    span {
+        font-size: 1em;
+    }
+
+    .filter_item span {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1100px) {
+}
+/* ---- Start of max-width 992px CSS ---- */
+@media (min-width: 992px) {
+}
+
+@media (max-width: 992px) {
+}
+
+
+/* ---- End of max-width 992px CSS ---- */
+@media all and (min-width: 769px) {
+}
+
+@media all and (min-width: 481px) {
+}
+
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 767px CSS ---- */
+@media all and (max-width: 767px) {
+    .container-fuild {
+        padding: 0 1rem;
+    }
+
+    .form_outer {
+        padding: 1rem 0;
+    }
+}
+
+/* ---- End of max-width 767px CSS ---- */
+
+
+/* ---- Start of max-width 580px CSS ---- */
+/* ---- Start of max-width 580px CSS ---- */
+@media all and (max-width: 576px) {
+
+
+    h1 {
+        font-size: 1.9em
+    }
+
+    h2 {
+        font-size: 1.7em
+    }
+
+    h3 {
+        font-size: 1.4em
+    }
+
+    h4 {
+        font-size: 1.3em
+    }
+
+    h5 {
+        font-size: 1.1em
+    }
+
+    .form-select {
+        margin-bottom: 0.2rem;
+    }
+
+    .filter_item {
+        margin-bottom: 0;
+    }
+
+    .col-xs-1 {
+        width: 50%;
+    }
+}
+
+
+/* ---- End of max-width 580px CSS ---- */
+
+
+/* ---- Start of max-width 480px CSS ---- */
+@media all and (max-width: 480px) {
+}
+/* ---- End of max-width 480px CSS ---- */
+
+
+/* ---- Start of max-width 420px CSS ---- */
+@media all and (max-width: 420px) {
+}
+/* ---- End of max-width 420px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+@media all and (max-width: 380px) {
+}
+/* ---- End of max-width 380px CSS ---- */
+
+
+/* ---- Start of max-width 320px CSS ---- */
+@media all and (max-width: 320px) {
+}
+/* ---- End of max-width 320px CSS ---- */
+
+
+/* ---- Start of max-height 420px CSS ---- */
+@media screen and (max-height: 420px) {
+}

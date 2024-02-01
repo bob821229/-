@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall -->
+<html lang="zh-TW">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>農業水資源智慧決策支援平台</title>
+    <link rel="icon" href="src/assets/page1/WRWSR_LOGO_Only.svg">
+
+    <!-- =====  tabler icon  =====-->
+    <link rel="stylesheet" href="src/assets/page1/tabler-icons.min.css">
+    <!-- =====  vendor  =====-->
+    <link rel="stylesheet" href="src/assets/page1/reset.min.css">
+    <link rel="stylesheet" href="src/assets/page1/bootstrap.min.css">
+    <!-- =====  vendor-leaflet  =====-->
+    <link rel="stylesheet" href="src/assets/page1/leaflet.css">
+    <!-- ==== sort table ====-->
+    <link rel="stylesheet" href="src/assets/page1/all.css">
+    <link href="src/assets/page1/jquery.resizableColumns.css" rel="stylesheet">
+    <link href="src/assets/page1/bootstrap-table.min.css" rel="stylesheet">
+    <!-- =====  google font  =====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="src/assets/page1/css2" rel="stylesheet">
+    <link href="src/assets/page1/css2(1)" rel="stylesheet">
+    <!-- =====  vendor-select2  =====    -->
+    <link href="src/assets/page1/select2.min.css" rel="stylesheet">
+    <!-- =====  stylecss  =====-->
+    <link rel="stylesheet" href="src/assets/page1/style.css">
+    <link rel="stylesheet" href="src/assets/page1/responsive.css">
+    <!-- =====  日曆  =====-->
+
+    <link rel="stylesheet" href="src/assets/page1/jquery-ui.css">
+    <script src="src/assets/page1/jquery.min.js.下載"></script>
+    <script src="src/assets/page1/jquery-ui.min.js.下載"></script>
+
+    <!-- #region 台農院datepicker -->
+    <link href="src/assets/page1/datepicker.css" rel="stylesheet">
+    <script src="src/assets/page1/ROCdatepicker.js.下載"></script>
+    <script src="src/assets/page1/datepicker.zh-CN.js.下載"></script>
+    <!-- #endregion -->
+    <!-- #region datepicker -->
+
+
+    <!-- #endregion -->
+
+    <script src="src/assets/page1/moment.min.js.下載"></script>
+    <script src="src/assets/page1/moment-range.js.下載"></script>
+
+
+    <link href="src/assets/page1/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="src/assets/page1/datepicker.css" rel="stylesheet">
+
+
+    <style>
+        .table> :not(:first-child) {
+            border-top: 2px solid #e0e0e0
+        }
+
+        table.table-bordered {
+            border: 1px solid #e0e0e0 !important;
+        }
+
+        table.table-bordered>thead>tr>th {
+            border: 1px solid #e0e0e0 !important;
+        }
+
+        table.table-bordered>tbody>tr>td {
+            border: 1px solid #e0e0e0 !important;
+        }
+
+        .leaflet-container {
+            background: white;
+        }
+
+        .modal {
+            z-index: 1300;
+        }
+    </style>
+</head>
+
+<body cz-shortcut-listen="true">
+
+    <div id="loading" style="display: none;">
+        <div class="d-flex justify-content-center spin">
+            <div class="spinner-border text-success" role="status"></div>
+        </div>
+        <span class="t_loading">Loading...</span>
+    </div>
+    <div class="header_block">
+        <header>
+            <div class="navleft w_100">
+                <nav class="navbar navbar-expand-lg d-flex">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                        aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hambergerIcon"></div>
+                    </button>
+                    <a class="logo_outer d-flex align_center" href="https://wrwsr.triwra.org.tw/">
+                        <div class="logo w_15">
+                            <img src="src/assets/page1/WRWSR_LOGO_Only.svg" alt="">
+                        </div>
+                        <div class="navbar-brand">
+                            <span>農業水資源<br>智慧決策支援平台</span>
+                        </div>
+                    </a>
+                    <div class="btn-group pc_hide sm_admin_acc" style="z-index:1300">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="ti ti-user-circle"> </i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item"
+                                    href="https://wrwsr.triwra.org.tw/Manage/ChangePassword">變更密碼</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item"
+                                    href="javascript:document.getElementById(&#39;logoutForm&#39;).submit()">登出</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-between" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li id="MenuID1" class="nav-item dropdown rain_menu active">
+                                <a class="nav-link dropdown-toggle"
+                                    href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#"
+                                    data-bs-toggle="dropdown">
+                                    降雨情勢</a>
+                                <ul class="dropdown-menu menu1">
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                            <div class="outer d-flex align_center justify-content-between">
+                                                <div class="link_item">
+                                                    <i class="ti ti-clock-hour-4"></i>
+                                                    <span class="">即時雨量</span>
+                                                </div>
+                                                <i class="ti ti-chevron-right">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/RainfallSituation/ReservoirDailyCumulativeRainfall">
+                                                    日累積雨量</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/RainfallAnalysis/Raingraph">
+                                                    降雨組體圖</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                            <div class="outer d-flex align_center justify-content-between">
+                                                <div class="link_item">
+                                                    <i class="ti ti-history"></i>
+                                                    <span class="">歷史雨量</span>
+                                                </div>
+                                                <i class="ti ti-chevron-right">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall">
+                                                    有效雨量分析</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                            <div class="outer d-flex align_center justify-content-between">
+                                                <div class="link_item">
+                                                    <i class="ti ti-telescope"></i>
+                                                    <span class="">預測雨量</span>
+                                                </div>
+                                                <i class="ti ti-chevron-right">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/RainfallSituation/FutureRainfallEstimation">
+                                                    未來兩週累積雨量估計</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/SeasonalLongTermWeather/WeatherOutlook">
+                                                    季長期天氣展望</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                            <div class="outer d-flex align_center justify-content-between">
+                                                <div class="link_item">
+                                                    <i class="ti ti-wiper"></i>
+                                                    <span class="">乾旱監測</span>
+                                                </div>
+                                                <i class="ti ti-chevron-right">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/RainfallSituation/RainfallRanking">
+                                                    累積雨量枯旱排名</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/RainfallSituation/CumulativeRainfallWithQ">
+                                                    超越機率累積雨量</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/RainfallSituation/DroughtMonitoring">
+                                                    區域乾旱監測</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="MenuID200" class="nav-item dropdown water_menus">
+                                <a class="nav-link dropdown-toggle"
+                                    href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#"
+                                    data-bs-toggle="dropdown">
+                                    水源情勢</a>
+                                <ul class="dropdown-menu menu1">
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                            <div class="outer d-flex align_center justify-content-between">
+                                                <div class="link_item">
+                                                    <i class="ti ti-clock-hour-4"></i>
+                                                    <span class="">水庫水情</span>
+                                                </div>
+                                                <i class="ti ti-chevron-right">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/WaterSituation/RealtimeReservoirInformation">
+                                                    即時水庫水情</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/WaterSituation/ReservoirWaterStorageChart">
+                                                    蓄水量歷線圖​</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/WaterSituation/DailyIrrigaWaterSituation">
+                                                    每日豐枯水情</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/WaterSituation/WaterStorageRanking">
+                                                    蓄水量枯旱排名</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/WaterSituation/InflowRanking">
+                                                    入庫水量枯旱排名</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item link_1"
+                                            href="https://wrwsr.triwra.org.tw/Reservoir/ImpoundingInfo">
+                                            <i class="ti ti-droplet-half-2">&nbsp;</i>埤塘水情</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="MenuID300" class="nav-item dropdown farm_menu">
+                                <a class="nav-link dropdown-toggle"
+                                    href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#"
+                                    data-bs-toggle="dropdown">
+                                    耕作情勢</a>
+                                <ul class="dropdown-menu menu1">
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                            <div class="outer d-flex align_center justify-content-between">
+                                                <div class="link_item">
+                                                    <i class="ti ti-clock-hour-4"></i>
+                                                    <span class="">耕作分布</span>
+                                                </div>
+                                                <i class="ti ti-chevron-right">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/Irrigation/IrrigationSituation">
+                                                    作物分布情勢</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                            <div class="outer d-flex align_center justify-content-between">
+                                                <div class="link_item">
+                                                    <i class="ti ti-report-analytics"></i>
+                                                    <span class="">灌溉計畫</span>
+                                                </div>
+                                                <i class="ti ti-chevron-right">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/Irrigation/IrrigationPlanTendays">
+                                                    各旬計畫用水量</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/Irrigation/IrrigationWaterCalculative">
+                                                    水稻灌溉水量計算</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                            <div class="outer d-flex align_center justify-content-between">
+                                                <div class="link_item">
+                                                    <i class="ti ti-droplet-half-filled"></i>
+                                                    <span class="">灌溉實施</span>
+                                                </div>
+                                                <i class="ti ti-chevron-right">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/Irrigation/IrrigationProgress">
+                                                    灌溉進度</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link_1"
+                                                    href="https://wrwsr.triwra.org.tw/Irrigation/FieldWaterRequire">
+                                                    田間需水量推估</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="MenuID500" class="nav-item dropdown risk_menu">
+                                <a class="nav-link dropdown-toggle"
+                                    href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#"
+                                    data-bs-toggle="dropdown">
+                                    風險分析</a>
+                                <ul class="dropdown-menu menu1">
+                                    <li>
+                                        <a class="dropdown-item link_1"
+                                            href="https://wrwsr.triwra.org.tw/WaterOperation/ReservoirInflowToRisk">
+                                            <i class="ti ti-report-analytics">&nbsp;</i>供灌缺水風險評估</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item link_1"
+                                            href="https://wrwsr.triwra.org.tw/InflowRiskAssessment/CalculateflowToRisk">
+                                            <i class="ti ti-report-analytics">&nbsp;</i>推估入流量風險評估</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="MenuID400" class="nav-item dropdown decision_menu">
+                                <a class="nav-link dropdown-toggle"
+                                    href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#"
+                                    data-bs-toggle="dropdown">
+                                    供灌決策</a>
+                                <ul class="dropdown-menu menu1">
+                                    <li>
+                                        <a class="dropdown-item link_1"
+                                            href="https://wrwsr.triwra.org.tw/SupIrrigDecisions/WaterStorageIrrigSimu">
+                                            <i class="ti ti-apps">&nbsp;</i>供灌情境方案模擬_曾文</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item link_1"
+                                            href="https://wrwsr.triwra.org.tw/SupIrrigDecisions/WaterStorageIrrigSimu_2">
+                                            <i class="ti ti-apps">&nbsp;</i>供灌情境方案模擬_石門</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item link_1"
+                                            href="https://wrwsr.triwra.org.tw/WaterOperation/WaterOperationSimulation">
+                                            <i class="ti ti-cardboards">&nbsp;</i>供灌配水操作模擬</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <input type="hidden" id="RootMenuID" value="1"> <!--使用者個人相關功能區塊-->
+                        <form action="https://wrwsr.triwra.org.tw/Account/LogOff" class="navbar-right" id="logoutForm"
+                            method="post"><input name="__RequestVerificationToken" type="hidden"
+                                value="5ehbTgzZdDM8ogVH4RSKFwaWw8UJM3PtDL5eu8AQP_kJEPwfjBKmZokk1TsKoHdQhuDEVHvD9y7AL2HTGMjbZ5or7jAG8EFUdg8cbkODIznD9UmZAa5tOOvylwP_cAR5UtZir6A5X5AFtk4yBSzZ3g2">
+                            <ul class="navbar-nav admin_acc tablet_hide">
+                                <li id="MenuID0" class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                        href="https://wrwsr.triwra.org.tw/RainfallAnalysis/EffectiveRainfall#">
+                                        <div class="outer d-flex align_center">
+                                            <i class="ti ti-user-circle"></i>
+                                            <span>
+                                                許弘毅 </span>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end menu1">
+                                        <li>
+                                            <a class="dropdown-item"
+                                                href="https://wrwsr.triwra.org.tw/Manage/ChangePassword">變更密碼</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item"
+                                                href="javascript:document.getElementById(&#39;logoutForm&#39;).submit()">登出</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+
+
+    <style>
+        #TendataTableBlock .bootstrap-table {
+            margin-right: 2%;
+        }
+
+        .more_tablet_btn {
+            top: -145px;
+        }
+
+        .bootstrap-table .fixed-table-container .fixed-table-body {
+            height: 525px;
+        }
+
+        .table_outer {
+            overflow: hidden;
+        }
+    </style>
+    <section class="main effect_rain">
+        <div class="container-fluid">
+            <div class="row">
+                <!--title-->
+                <div class="col-lg-12 mb-3 d-flex justify-content-between align_center flex-wrap">
+                    <div class="outer d-flex align_center flex-wrap">
+                        <div class="main_title mr-5">
+                            <i class="ti ti-history title_icon"> </i>
+                            <h4>有效雨量分析</h4>
+                        </div>
+                        <div class="breadcrumb pt-3 ml-5"><span>降雨情勢/</span><span>歷史雨量/</span><span>有效雨量分析</span></div>
+                    </div>
+                    <div class="renew_time"><span>更新日期：113-01-31</span></div>
+                </div>
+                <div class="col-xxl-2 col-xl-4 col_left_block mb-3">
+                    <!--搜尋條件-->
+                    <div class="block_outer search_select">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mb-3">
+                                <div class="option_outer sm_form_width">
+                                    <span>選擇管理處</span>
+                                    <select id="managementSelect" class="form-select mt-1"
+                                        aria-label="Default select example">
+                                        <option value="01">宜蘭</option>
+                                        <option value="02">北基</option>
+                                        <option value="03">桃園</option>
+                                        <option value="04">石門</option>
+                                        <option value="05">新竹</option>
+                                        <option value="06">苗栗</option>
+                                        <option value="07">臺中</option>
+                                        <option value="08">南投</option>
+                                        <option value="09">彰化</option>
+                                        <option value="10">雲林</option>
+                                        <option value="11">嘉南</option>
+                                        <option value="12">高雄</option>
+                                        <option value="13">屏東</option>
+                                        <option value="14">臺東</option>
+                                        <option value="15">花蓮</option>
+                                        <option value="16">七星</option>
+                                        <option value="17">瑠公</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="option_outer sm_form_width">
+                                    <span>統計期間</span>
+                                    <select id="yearSelect" class="form-select mt-1"
+                                        aria-label="Default select example">
+                                        <option value="112">112</option>
+                                        <option value="111">111</option>
+                                        <option value="110">110</option>
+                                        <option value="109">109</option>
+                                        <option value="108">108</option>
+                                        <option value="107">107</option>
+                                        <option value="106">106</option>
+                                        <option value="105">105</option>
+                                        <option value="104">104</option>
+                                        <option value="103">103</option>
+                                        <option value="102">102</option>
+                                        <option value="101">101</option>
+                                        <option value="100">100</option>
+                                        <option value="99">99</option>
+                                        <option value="98">98</option>
+                                        <option value="97">97</option>
+                                        <option value="96">96</option>
+                                        <option value="95">95</option>
+                                        <option value="94">94</option>
+                                        <option value="93">93</option>
+                                        <option value="92">92</option>
+                                        <option value="91">91</option>
+                                        <option value="90">90</option>
+                                        <option value="89">89</option>
+                                        <option value="88">88</option>
+                                        <option value="87">87</option>
+                                    </select>
+                                    <select id="monthTenSelect" class="form-select mt-2"
+                                        aria-label="Default select example">
+                                        <option value="0" selected="">月 </option>
+                                        <option value="1">旬 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="line"></div>
+                                <div class="btn search_btn w_100" onclick="Search()"><span>查詢</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-10 col-xl-8 col_right_block mb-3">
+                    <div class="row">
+                        <!--chart---------------------------------------------------------->
+                        <div class="col-lg-12 mb-3">
+                            <div class="block_outer text-center">
+                                <div class="chart_outer mobile_hide">
+                                    <div id="chart-container" _echarts_instance_="ec_1706669039972"
+                                        style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+                                        <div
+                                            style="position: relative; width: 1866px; height: 569px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                                            <canvas data-zr-dom-id="zr_0" width="1866" height="569"
+                                                style="position: absolute; left: 0px; top: 0px; width: 1866px; height: 569px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                                        </div>
+                                        <div
+                                            style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; text-align: left; padding: 5px; left: 1107px; top: 101px; pointer-events: none;">
+                                            7<br><span
+                                                style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#3A5FCD;"></span>實際:
+                                            90<br><span
+                                                style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#000000;"></span>計畫:
+                                            25.26</div>
+                                    </div>
+                                </div>
+                                <div class="chart_outer mobile_show">
+                                    <div id="chart-container2"
+                                        style="height: 400px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;"
+                                        _echarts_instance_="ec_1706669039973">
+                                        <div
+                                            style="position: relative; width: 0px; height: 400px; padding: 0px; margin: 0px; border-width: 0px;">
+                                            <canvas data-zr-dom-id="zr_0" width="0" height="400"
+                                                style="position: absolute; left: 0px; top: 0px; width: 0px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- partial-->
+    <script src="src/assets/page1/axios.min.js.下載"></script>
+    <script src="src/assets/page1/bootstrap.bundle.min.js.下載"></script>
+    <!-- table sort-->
+    <script src="src/assets/page1/jquery.resizableColumns.min.js.下載"></script>
+    <script src="src/assets/page1/bootstrap-table.min.js.下載"></script>
+    <script src="src/assets/page1/bootstrap-table-resizable.min.js.下載"></script>
+    <!-- echarts-->
+    <script src="src/assets/page1/echarts.min.js.下載"></script>
+    <!-- download table -->
+
+
+
+
+
+    <script src="src/assets/page1/tableExport.min.js.下載"></script>
+    <!-- custom-->
+    <script src="src/assets/page1/custom.js.下載"></script>
+    <script src="src/assets/page1/api.js.下載"></script>
+    <script src="src/assets/page1/validator.js.下載"></script>
+
+
+
+
+</body>
+
+</html>

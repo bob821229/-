@@ -1,0 +1,2258 @@
+[
+    {
+        "department": "宜蘭",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "頭城",
+        "pondName": "頭城合計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "宜蘭",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "頭城",
+        "pondName": "大坑罟圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "宜蘭",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "頭城",
+        "pondName": "福德坑圳等四圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "宜蘭",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "頭城",
+        "pondName": "金門圳等七圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "宜蘭",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "礁溪",
+        "pondName": "礁溪合計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "宜蘭",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "礁溪",
+        "pondName": "充公圳充公支線",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "宜蘭",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "壯圍",
+        "pondName": "壯圍合計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "宜蘭",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "壯圍",
+        "pondName": "新城圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "宜蘭",
+        "waterSource": "全處總計",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "全處總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "北基",
+        "waterSource": "全處總計",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "全處總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "北基",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "三石",
+        "pondName": "八連下圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "北基",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "三石",
+        "pondName": "八連下圳等二圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "北基",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "三石",
+        "pondName": "四合興圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "北基",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "金山",
+        "pondName": "田心子二圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": false
+            },
+            {
+                "year": "106",
+                "data": false
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": true
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "北基",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "金山",
+        "pondName": "清水圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "桃園",
+        "waterSource": "全處總計",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "全處總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "桃園",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "桃園",
+        "pondName": "工作站合計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "桃園",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "桃園",
+        "pondName": "桃園站幹直",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "桃園",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "海山",
+        "pondName": "大安圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "桃園",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "海山",
+        "pondName": "公館後圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "石門",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "中壢",
+        "pondName": "社子支渠",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "石門",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "中壢",
+        "pondName": "埔頂支渠",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "石門",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "楊梅",
+        "pondName": "環頂支渠",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "石門",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "楊梅",
+        "pondName": "高山頂支渠",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "石門",
+        "waterSource": "全處總計",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "全處總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "新竹",
+        "waterSource": "全處總計",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "全處總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "新竹",
+        "waterSource": "頭前溪水系",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "新竹",
+        "pondName": "雷公圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "新竹",
+        "waterSource": "頭前溪水系",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "新竹",
+        "pondName": "后湖圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "大安溪水系",
+        "location": "其他",
+        "system1": "上灌區",
+        "system2": "其他",
+        "workstation": "卓蘭",
+        "pondName": "卓蘭圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "大安溪水系",
+        "location": "其他",
+        "system1": "上灌區",
+        "system2": "其他",
+        "workstation": "卓蘭",
+        "pondName": "卓蘭站合計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "全處總計",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "全處總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "大安溪水系",
+        "location": "其他",
+        "system1": "下灌區",
+        "system2": "苑裡圳",
+        "workstation": "其他",
+        "pondName": "苑裡圳總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "大安溪水系",
+        "location": "其他",
+        "system1": "下灌區",
+        "system2": "苑裡圳",
+        "workstation": "山腳",
+        "pondName": "苑裡圳山腳灌區",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "大安溪水系",
+        "location": "其他",
+        "system1": "下灌區",
+        "system2": "苑裡圳",
+        "workstation": "苑裡",
+        "pondName": "苑裡圳苑裡灌區",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "大甲溪水系",
+        "location": "其他",
+        "system1": "上灌區",
+        "system2": "葫蘆墩圳",
+        "workstation": "西屯",
+        "pondName": "南門支線",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "大甲溪水系",
+        "location": "其他",
+        "system1": "上灌區",
+        "system2": "葫蘆墩圳",
+        "workstation": "西屯",
+        "pondName": "東門支線",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "台中",
+        "waterSource": "大甲溪水系",
+        "location": "其他",
+        "system1": "下灌區",
+        "system2": "其他",
+        "workstation": "屯子腳",
+        "pondName": "內埔圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "南投",
+        "waterSource": "全處總計",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "全處總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "南投",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "草屯",
+        "pondName": "草屯合計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "南投",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "草屯",
+        "pondName": "北投新圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "南投",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "魚池",
+        "pondName": "大林圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "南投",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "魚池",
+        "pondName": "新城圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "南投",
+        "waterSource": "其他",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "魚池",
+        "pondName": "頭社圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "雲林",
+        "waterSource": "全處總計",
+        "location": "其他",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "全處總計",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "雲林",
+        "waterSource": "濁水溪",
+        "location": "斗六",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "斗六大圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "雲林",
+        "waterSource": "濁水溪",
+        "location": "斗六",
+        "system1": "斗六大圳",
+        "system2": "其他",
+        "workstation": "其他",
+        "pondName": "林內圳",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "雲林",
+        "waterSource": "北港溪",
+        "location": "斗六",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "斗六",
+        "pondName": "斗六埤",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    },
+    {
+        "department": "雲林",
+        "waterSource": "北港溪",
+        "location": "斗六",
+        "system1": "其他",
+        "system2": "其他",
+        "workstation": "斗六",
+        "pondName": "雲林埤",
+        "dataLength": [
+            {
+                "year": "105",
+                "data": true
+            },
+            {
+                "year": "106",
+                "data": true
+            },
+            {
+                "year": "107",
+                "data": false
+            },
+            {
+                "year": "108",
+                "data": false
+            },
+            {
+                "year": "109",
+                "data": true
+            },
+            {
+                "year": "110",
+                "data": false
+            },
+            {
+                "year": "111",
+                "data": false
+            },
+            {
+                "year": "112",
+                "data": false
+            },
+            {
+                "year": "113",
+                "data": false
+            }
+        ]
+    }
+]
