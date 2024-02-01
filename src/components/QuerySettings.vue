@@ -18,7 +18,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-3" v-if="waterSourcesHandle.length > 0">
+                    <div class="col-lg-3 col-md-12 mb-3">
                         <div class="option_outer sm_form_width">
                             <select v-model="selectWaterSource" id="managementSelect" class="form-select mt-1"
                                 aria-label="Default select example">
@@ -27,7 +27,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-3" v-if="locationsHandle.length > 0">
+                    <div class="col-lg-3 col-md-12 mb-3">
                         <div class="option_outer sm_form_width">
                             <select v-model="selectLocation" id="managementSelect" class="form-select mt-1"
                                 aria-label="Default select example">
@@ -36,7 +36,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-3" v-if="system1sHandle.length > 0">
+                    <div class="col-lg-3 col-md-12 mb-3">
                         <div class="option_outer sm_form_width">
                             <select v-model="selectSystem1" id="managementSelect" class="form-select mt-1"
                                 aria-label="Default select example">
@@ -45,7 +45,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-3" v-if="system2sHandle.length > 0">
+                    <div class="col-lg-3 col-md-12 mb-3">
                         <div class="option_outer sm_form_width">
                             <select v-model="selectSystem2" id="managementSelect" class="form-select mt-1"
                                 aria-label="Default select example">
@@ -54,7 +54,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-3" v-if="workstationsHandle.length > 0">
+                    <div class="col-lg-3 col-md-12 mb-3">
                         <div class="option_outer sm_form_width">
                             <select v-model="selectWorkstation" id="managementSelect" class="form-select mt-1"
                                 aria-label="Default select example">
@@ -92,7 +92,6 @@ import Enumerable from 'linq';
 import { useCounterStore } from '@/stores/counter'
 const { fetchDataStore } = useCounterStore();
 import Windows from '@/components/Windows.vue'
-import { resourceUsage } from 'process';
 
 const data = ref()
 const selectDepartment = ref("");
@@ -128,7 +127,7 @@ const waterSourcesHandle = computed(() => {
     return result
 })
 const locationsHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.systemName != null }).select(item => item.branch)
+    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch != null }).select(item => item.branch)
         .distinct()
         .toArray();
     if (result.length == 1) {
@@ -137,7 +136,7 @@ const locationsHandle = computed(() => {
     return result
 })
 const system1sHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.systemName != null }).select(item => item.subSystem1)
+    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 != null }).select(item => item.subSystem1)
         .distinct()
         .toArray();
     if (result.length == 1) {
@@ -146,7 +145,7 @@ const system1sHandle = computed(() => {
     return result
 })
 const system2sHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.systemName != null }).select(item => item.subSystem2)
+    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 != null }).select(item => item.subSystem2)
         .distinct()
         .toArray();
 
@@ -156,7 +155,7 @@ const system2sHandle = computed(() => {
     return result
 })
 const workstationsHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 === selectSystem2.value && i.systemName != null }).select(item => item.workStation)
+    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 === selectSystem2.value && i.workStation != null }).select(item => item.workStation)
         .distinct()
         .toArray();
 
@@ -166,7 +165,7 @@ const workstationsHandle = computed(() => {
     return result
 })
 const pondNamesHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 === selectSystem2.value && i.workStation === selectWorkstation.value && i.systemName != null }).select(item => item.canalName)
+    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 === selectSystem2.value && i.workStation === selectWorkstation.value && i.canalName != null }).select(item => item.canalName)
         .distinct()
         .toArray();
     if (result.length == 1) {
