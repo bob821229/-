@@ -1,13 +1,11 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-                <slot name="aside">Default Aside</slot>
-            </div>
-            <div class="col-4">
-                <slot name="main">Default Main</slot>
+    <div class="row">
+        <div class="col-8">
+            <slot name="aside">Default Aside</slot>
+        </div>
+        <div class="col-4">
+            <slot name="main">Default Main</slot>
 
-            </div>
         </div>
     </div>
 </template>
@@ -16,4 +14,8 @@
 
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.row {
+    padding: 20px;
+}
+</style>

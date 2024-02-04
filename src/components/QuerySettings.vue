@@ -14,7 +14,7 @@
                             <select v-model="selectDepartment" id="managementSelect" class="form-select mt-1"
                                 aria-label="Default select example">
                                 <option value="" disabled selected>選擇管理處</option>
-                                <option :value="d" v-for="d in departments">{{ d }}</option>
+                                <option :value="d" v-for="d in props.departments">{{ d }}</option>
                             </select>
                         </div>
                     </div>
@@ -86,39 +86,27 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import axios from 'axios';
-import { ref, onMounted, computed, reactive } from 'vue';
+import { ref, computed } from 'vue';
 import Enumerable from 'linq';
 // pinia
 import { useCounterStore } from '@/stores/counter'
 const { fetchDataStore } = useCounterStore();
 import Windows from '@/components/Windows.vue'
 
-const data = ref()
+const props = defineProps(['data', 'departments'])
+const data = ref(props.data)
+const departments = ref(props.departments);
 const selectDepartment = ref("");
-const departments = ref([]);
 const selectWaterSource = ref("");
 const selectLocation = ref("");
 const selectSystem1 = ref("");
 const selectSystem2 = ref("");
 const selectWorkstation = ref("");
 const selectPondName = ref("");
-const getData = async () => {
-    try {
-        const response = await axios.get('public/data/canalStationList.json');
-        data.value = response.data
-        console.log(response.data)
-        // 取得所有的管理處
-        departments.value = Enumerable.from(response.data)
-            .select(item => item.association)
-            .distinct()
-            .toArray();
-    } catch (error) {
-        console.error('連線失敗:', error);
-    }
-}
+
 
 const waterSourcesHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName != null }).select(item => item.systemName)
+    let result = Enumerable.from(props.data).where(function (i) { return i.association === selectDepartment.value }).select(item => item.systemName)
         .distinct()
         .toArray();
     if (result.length == 1) {
@@ -127,7 +115,7 @@ const waterSourcesHandle = computed(() => {
     return result
 })
 const locationsHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch != null }).select(item => item.branch)
+    let result = Enumerable.from(props.data).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value }).select(item => item.branch)
         .distinct()
         .toArray();
     if (result.length == 1) {
@@ -136,7 +124,7 @@ const locationsHandle = computed(() => {
     return result
 })
 const system1sHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 != null }).select(item => item.subSystem1)
+    let result = Enumerable.from(props.data).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value }).select(item => item.subSystem1)
         .distinct()
         .toArray();
     if (result.length == 1) {
@@ -145,7 +133,7 @@ const system1sHandle = computed(() => {
     return result
 })
 const system2sHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 != null }).select(item => item.subSystem2)
+    let result = Enumerable.from(props.data).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value }).select(item => item.subSystem2)
         .distinct()
         .toArray();
 
@@ -155,7 +143,7 @@ const system2sHandle = computed(() => {
     return result
 })
 const workstationsHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 === selectSystem2.value && i.workStation != null }).select(item => item.workStation)
+    let result = Enumerable.from(props.data).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 === selectSystem2.value }).select(item => item.workStation)
         .distinct()
         .toArray();
 
@@ -165,23 +153,15 @@ const workstationsHandle = computed(() => {
     return result
 })
 const pondNamesHandle = computed(() => {
-    let result = Enumerable.from(data.value).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 === selectSystem2.value && i.workStation === selectWorkstation.value && i.canalName != null }).select(item => item.canalName)
+    let result = Enumerable.from(props.data).where(function (i) { return i.association === selectDepartment.value && i.systemName === selectWaterSource.value && i.branch === selectLocation.value && i.subSystem1 === selectSystem1.value && i.subSystem2 === selectSystem2.value && i.workStation === selectWorkstation.value }).select(item => item.canalName)
         .distinct()
         .toArray();
     if (result.length == 1) {
-        selectWorkstation.value = result[0];
+        selectPondName.value = result[0];
     }
     return result
 })
-const result = reactive({
-    departments: "",
-    waterSources: "",
-    locations: "",
-    system1s: "",
-    system2s: "",
-    workstations: "",
-    pondNames: ""
-})
+
 const isActive = ref(true)
 const searchResult = async () => {
     if (selectPondName.value == '') {
@@ -209,9 +189,7 @@ const searchResult = async () => {
     // selectPondName.value=''
     // isActive.value=false;
 }
-onMounted(() => {
-    getData()
-})
+
 </script>
 
 <style scoped lang="scss">
