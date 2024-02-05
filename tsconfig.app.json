@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/assets/login/jquery.min.js", "src/assets/page1/tableExport.min.js", "src/assets/page1/moment.min.js", "src/assets/page1/jquery.resizableColumns.min.js", "src/assets/page1/echarts.min.js", "src/assets/page1/bootstrap.bundle.min.js", "src/assets/page1/bootstrap-table.min.js", "src/assets/page1/jquery-ui.min.js", "src/assets/page1/jquery.min.js"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,

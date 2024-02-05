@@ -1,11 +1,16 @@
 <template>
   <Header />
+  {{ canal }}
   <Layout>
     <template #aside>
-      <QuerySettings :data="data" :departments="departments"></QuerySettings>
+      <!-- 階層查詢 -->
+      <QuerySettings :data="parentData" :departments="parentDepartments" :canal="canal"></QuerySettings>
+      <!-- 期作別選擇 -->
+      <PeriodChoose :canal="canal"></PeriodChoose>
     </template>
     <template #main>
-      <SettingSummary></SettingSummary>
+      <!-- 設定摘要&選定結果 -->
+      <SettingSummary :canal="canal"></SettingSummary>
     </template>
   </Layout>
 </template>
@@ -15,20 +20,38 @@ import Header from '@/components/Header.vue'
 import Layout from '@/components/Layout.vue'
 import QuerySettings from './components/QuerySettings.vue'
 import SettingSummary from './components/SettingSummary.vue'
+import PeriodChoose from './components/PeriodChoose.vue'
 import Enumerable from 'linq';
 import axios from 'axios';
 
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, reactive } from 'vue';
+const canal = reactive(
+  {
+    rid: 0,
+    association: '',//管理處
+    systemName: '',//水源別
+    branch: '',//分處
+    subSystem1: '',//系統1
+    subSystem2: '',//系統2
+    workStation: '',//工作站
+    canalName: '',//埤圳別
+    period: '1',//期別
+    startYear: '',//起始年
+    endYear: '',//結束年
+  }
+)
 
-
-const data = ref()
-const departments = ref();
+interface Department {
+  association: string;
+}
+const parentData = ref([])
+const parentDepartments = ref<Department[]>([]);
 const getData = async () => {
   try {
     const response = await axios.get('public/data/canalStationList.json');
-    data.value = response.data
+    parentData.value = response.data
     // 取得所有的管理處
-    departments.value = Enumerable.from(response.data)
+    parentDepartments.value = Enumerable.from(response.data)
       .select(item => item.association)
       .distinct()
       .toArray();
